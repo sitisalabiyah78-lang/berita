@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita – Meletusnya Gunung Semeru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+        .hero {
+            height: 90vh;
+            background: url('https://images.unsplash.com/photo-1600607688535-5e5b0b51a1f7?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: white;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .news-image {
+            border-radius: 12px;
+        }
+        .footer {
+            background: #111;
+            color: #eee;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Semeru News</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content text-center">
+            <h1 class="display-4 fw-bold">Gunung Semeru Meletus</h1>
+            <p class="lead">Laporan Lengkap & Terbaru Dari Lokasi Kejadian</p>
+            <a href="#berita" class="btn btn-danger btn-lg fw-bold">Baca Berita</a>
+        </div>
+    </section>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container my-5" id="berita">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-3">Letusan Dahsyat Gunung Semeru Mengguncang Lumajang</h2>
+                <p class="text-muted">Dipublikasikan: 27 November 2025</p>
+
+                <img src="gunungsmriu.jpg" class="img-fluid news-image mb-4">
+
+                <p>
+                    Gunung Semeru kembali menunjukkan aktivitas vulkaniknya dengan letusan besar yang 
+                    menyebabkan kolom abu mencapai ketinggian beberapa kilometer ke langit. Warga di 
+                    sekitar Kecamatan Pronojiwo dan sekitarnya diminta untuk tetap waspada dan mengikuti 
+                    arahan dari petugas BPBD setempat.
+                </p>
+
+                <p>
+                    Menurut laporan sementara, letusan terjadi pada pukul 15.20 WIB yang disertai 
+                    dengan guguran awan panas mengarah ke sektor tenggara. Petugas gabungan telah 
+                    melakukan evakuasi terhadap warga yang tinggal di zona merah demi keselamatan.
+                </p>
+
+                <img src="gunung.jpg" class="img-fluid news-image mb-4">
+
+                <p>
+                    Sampai saat ini, aktivitas vulkanik terus dipantau secara ketat. Para relawan, TNI, 
+                    Polri, beserta tim SAR telah turun ke lokasi untuk memastikan proses evakuasi berjalan 
+                    dengan aman. Sementara itu, debu vulkanik telah mencapai beberapa desa di Lumajang 
+                    dan sekitarnya, menyebabkan jarak pandang menurun.
+                </p>
+
+                <p>
+                    Warga diimbau untuk menggunakan masker dan kacamata pelindung saat beraktivitas di 
+                    luar ruangan. Pemerintah daerah juga telah menyiapkan posko darurat bagi warga yang 
+                    terdampak langsung dari erupsi ini.
+                </p>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-danger text-white fw-bold">
+                        Foto Terbaru
+                    </div>
+                    <img src="gunungggg.jpg" class="card-img-top">
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark text-white fw-bold">
+                        Informasi Tambahan
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Status: **Waspada**</li>
+                            <li>Radius bahaya: **5 km**</li>
+                            <li>Evakuasi: **Sedang berlangsung**</li>
+                            <li>Petugas gabungan telah disiagakan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Semeru News | Informasi Terkini Gunung Api Indonesia</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
